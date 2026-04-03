@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Блог</title>
+    <title>Все записи блога</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
-                <h1>Мой Блог</h1>
+                <h1><a href="index.html" class="back-link">← Все записи</a></h1>
                 <div class="controls">
                     <div class="font-size-controls">
                         <button class="btn btn-sm" id="font-decrease">A-</button>
@@ -23,23 +23,15 @@
         </div>
     </header>
 
-    <nav class="container">
-        <div class="nav-links">
-            <a href="#home">Главная</a>
-            <a href="posts.html">Записи</a>
-            <a href="about.html">О блоге</a>
-        </div>
-    </nav>
-
     <main class="container">
-        <section id="home">
-            <div class="post">
-                <h2>Добро пожаловать в мой блог!</h2>
-                <p>Здесь я делюсь своими мыслями, идеями и опытом на различные темы. 
-                Добро пожаловать в путешествие по моим размышлениям и открытиям.</p>
+        <div class="post">
+            <h2>Все записи блога</h2>
+            <div class="post-content">
+                <p>Здесь собраны все записи моего блога в хронологическом порядке.</p>
             </div>
-            
-            <h3>Последние записи</h3>
+        </div>
+
+        <section>
             <ul class="post-list">
                 <li class="post-item">
                     <h2 class="post-title">
@@ -59,11 +51,16 @@
                         Технологии меняют наш мир каждый день. В этой записи я хочу поделиться своими наблюдениями о том, как...
                     </p>
                 </li>
+                <li class="post-item">
+                    <h2 class="post-title">
+                        <a href="posts/post3.html">Книга, которая изменила мой взгляд</a>
+                    </h2>
+                    <div class="post-meta">28 февраля 2026 г.</div>
+                    <p class="post-excerpt">
+                        Недавно я прочитал книгу, которая заставила меня задуматься о многих вещах по-новому. Хочу поделиться...
+                    </p>
+                </li>
             </ul>
-            
-            <div style="text-align: center; margin: 2rem 0;">
-                <a href="posts.html" class="btn">Все записи</a>
-            </div>
         </section>
     </main>
 
