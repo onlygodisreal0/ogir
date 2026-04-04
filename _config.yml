@@ -1,0 +1,13 @@
+title: Ne2 site
+description: HTML-first blog
+
+collections:
+  posts:
+    output: true
+    permalink: /posts/:name/
+
+defaults:
+  - scope:
+      path: "posts"
+    values:
+      layout: post

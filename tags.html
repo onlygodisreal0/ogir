@@ -1,0 +1,17 @@
+---
+layout: default
+title: Теги
+---
+
+<h1>Теги</h1>
+
+<ul>
+    {% assign tags = site.posts | map: "tags" | flatten | uniq | sort %}
+    {% for tag in tags %}
+    <li>
+        <a href="/tag/{{ tag }}/">
+            {{ tag }} ({{ site.tags[tag].size }})
+        </a>
+    </li>
+    {% endfor %}
+</ul>
