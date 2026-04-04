@@ -1,13 +1,16 @@
-title: Ne2 site
-description: HTML-first blog
+title: "Название твоего блога"
+author: "Твое Имя"
+description: "Краткое описание блога для поисковых систем"
+baseurl: ""
+url: "https://www.ogir.org"
 
-collections:
-  posts:
-    output: true
-    permalink: /posts/:name/
+# Настройки темы
+remote_theme: cheere/tale # Используем удаленную тему, чтобы не копировать лишний код
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
 
-defaults:
-  - scope:
-      path: "posts"
-    values:
-      layout: post
+# Настройки пагинации (сколько постов на странице)
+paginate: 5
+paginate_path: "/page:num/"
