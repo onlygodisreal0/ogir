@@ -1,17 +1,16 @@
-title: "Название твоего блога"
-author: "Твое Имя"
-description: "Краткое описание блога для поисковых систем"
-baseurl: ""
+title: "Ogir Blog"
+tagline: "Заметки на полях"
+description: "Блог на ogir.org"
 url: "https://www.ogir.org"
+baseurl: ""
 
-# Настройки темы
-remote_theme: emoleon/tale # Используем удаленную тему, чтобы не копировать лишний код
+# Используем стабильную тему от создателя Bootstrap
+remote_theme: poole/lanyon
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
 
-# Настройки пагинации (сколько постов на странице)
 paginate: 5
-paginate_path: "/page:num/"
