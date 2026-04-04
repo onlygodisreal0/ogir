@@ -5,7 +5,7 @@ baseurl: ""
 url: "https://www.ogir.org"
 
 # Настройки темы
-remote_theme: cheere/tale@master # Используем удаленную тему, чтобы не копировать лишний код
+remote_theme: emoleon/tale # Используем удаленную тему, чтобы не копировать лишний код
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
